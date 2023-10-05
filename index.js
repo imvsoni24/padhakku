@@ -14,6 +14,10 @@ app.use("/api",userRoute);
 app.use(user)
 app.use("/api",postRoute);
 
+app.get("/",(req,res)=>{
+    res.send("Hii! this is a user signup and post management API ")
+})
+
 
 app.listen(process.env.port,async()=>{
     try{
